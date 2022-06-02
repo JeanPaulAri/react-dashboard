@@ -1,0 +1,12 @@
+//colors
+$bg1: #179b69;
+$white: #ffffff;
+
+//classes
+.homePage{
+  background-color: $bg1;
+  .tittle{
+    color: $white;
+    font-weight: normal;
+  }
+}

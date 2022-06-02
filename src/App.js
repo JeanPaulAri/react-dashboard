@@ -1,9 +1,10 @@
 import "./Styles/fonts.scss"
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      chipapa
+      <Home/>
     </div>
   );
 }
