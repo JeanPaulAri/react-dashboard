@@ -1,4 +1,4 @@
-
+import "./Styles/fonts.scss"
 
 function App() {
   return (
