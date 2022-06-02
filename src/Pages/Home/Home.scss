@@ -1,10 +1,17 @@
 //colors
 $bg1: #179b69;
 $white: #ffffff;
-
+$bg2: #21efa9;
 //classes
 .homePage{
-  background-color: $bg1;
+  //background-color: $bg1;
+
+  .homeContainer{
+    border: solid 2px $bg2;
+    border-radius: 10px;
+    flex: 6;
+  }
+  display: flex;
   .tittle{
     color: $white;
     font-weight: normal;

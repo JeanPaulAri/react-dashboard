@@ -4,7 +4,7 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import "./Styles/fonts.scss"
+import "./Styles/App.scss"
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import List from "./Pages/List/List";
@@ -28,7 +28,7 @@ function App() {
                     </Route>
                     <Route path="Products">
                         <Route index element={<List/>}/>
-                        <Route path=":userID" element={<Single/>}/>
+                        <Route path=":productID" element={<Single/>}/>
                         <Route path="new" element={<New/>}/>
                     </Route>
                 </Route>

@@ -1,12 +1,14 @@
 import React from 'react';
 import "./Home.scss";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 const Home= () =>{
 
     return(
         <div className="homePage">
-            <h1 className="tittle">
-                \The Chipapa Dashboard
-            </h1>
+            <Sidebar/>
+            <div className="homeContainer">
+                container
+            </div>
         </div>
     );
 

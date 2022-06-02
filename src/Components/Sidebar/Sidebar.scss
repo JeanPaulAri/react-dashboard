@@ -1,0 +1,47 @@
+@import "src/Styles/fonts.scss";
+//colors
+$bgSideBar1: #fd57a3;
+$bgLogo: #efb3e7;
+$colorLogo: #2b1f62;
+$white: #ffffff;
+
+//classes
+.Sidebar{
+  flex: 1;
+  border-right: .5px solid $bgSideBar1;
+  border-radius: 10px;
+  min-height: 100vh;
+  background-color: $white;
+
+  .top{
+
+      //background-color: $bgLogo;
+      border-bottom: .5px solid $bgSideBar1;
+      height: 50px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+
+    .logo{
+
+      @include logo-font();
+      font-size: 20px;
+      font-weight: bold;
+      //font-style: italic;
+      color: $colorLogo;
+
+    }
+  }
+  hr{
+    height:0;
+    border: 0.5px solid rgb(230,227,227);
+  }
+  .center{
+
+
+  }
+  .bottom{
+
+
+  }
+}

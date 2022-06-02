@@ -1,0 +1,4 @@
+@import "fonts";
+.App{
+  @include main-font();
+}
