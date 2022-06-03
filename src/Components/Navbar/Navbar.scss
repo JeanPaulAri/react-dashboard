@@ -1,0 +1,27 @@
+@import "src/Styles/fonts.scss";
+
+$turq: #439a82;
+$darkturq: #2b6c4c;
+
+$white: #ffffff;
+$smoke: whitesmoke;
+$darkgrey: #262525;
+$grey: #999999;
+$lightgrey: #cccccc;
+
+.Navbar{
+  height: 50px;
+  display: flex;
+  border-bottom: 2px solid $smoke;
+  align-items: center;
+  font-size: 14px;
+  color: $darkgrey;
+
+  .wrapper{
+    display: flex;
+    .items{
+
+    }
+  }
+
+}

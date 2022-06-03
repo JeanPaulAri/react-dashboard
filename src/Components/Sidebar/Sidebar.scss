@@ -2,33 +2,37 @@
 //colors
 $bgSideBar1: #fd57a3;
 $bgLogo: #efb3e7;
-$colorLogo: #2b1f62;
+$colorLogo: #e7b061;
+$colorIcons: #e76f25;
+
 $white: #ffffff;
+$smoke: whitesmoke;
+$darkgrey: #262525;
+$grey: #999999;
+$lightgrey: #cccccc;
 
 //classes
 .Sidebar{
   flex: 1;
-  border-right: .5px solid $bgSideBar1;
+  border-right: 2px solid $bgSideBar1;
   border-radius: 10px;
   min-height: 100vh;
   background-color: $white;
 
   .top{
-
       //background-color: $bgLogo;
-      border-bottom: .5px solid $bgSideBar1;
+      border-bottom: 2px solid $bgSideBar1;
       height: 50px;
       display:flex;
       align-items: center;
       justify-content: center;
-
     .logo{
-
       @include logo-font();
-      font-size: 20px;
+      font-size: 30px;
       font-weight: bold;
       //font-style: italic;
       color: $colorLogo;
+      text-shadow: 0 1px 1px  #111111;
 
     }
   }
@@ -37,10 +41,74 @@ $white: #ffffff;
     border: 0.5px solid rgb(230,227,227);
   }
   .center{
+    padding-left: 10px;
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding:0;
+    }
+    li{
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      cursor: pointer;
+      &:hover{
+        background-color: $lightgrey;
+        border-radius: 3px;
+      }
+      :active{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      span{
+        font-size: 15px;
+        font-weight: bold;
+        color: $darkgrey;
 
+      }
+      .icon{
+        font-size: 20px;
+        padding-right: 10px;
+        color: $colorIcons;
+      }
+    }
+    .tittle{
+      font-size: 12px;
+      font-weight: bold;
+      color: $grey;
+      margin-top:15px;
 
+    }
   }
   .bottom{
+    //display: flex;
+    align-items: center;
+    margin: 10px;
+    p{
+      font-size: 12px;
+      font-weight: bold;
+      color: $grey;
+      margin-top:15px;
+      padding-left: 0;
+    }
+    .colorOption{
+
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid $darkgrey;
+      margin: 5px;
+      cursor: pointer;
+
+
+      &:nth-child(1){
+        background-color: $smoke;
+      }
+      &:nth-child(2){
+         background-color: $darkgrey;
+      }
+
+
+    }
 
 
   }
