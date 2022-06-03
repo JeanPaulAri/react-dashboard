@@ -18,9 +18,20 @@ $lightgrey: #cccccc;
   color: $darkgrey;
 
   .wrapper{
+    width: 100%;
     display: flex;
-    .items{
+    align-items: center;
+    margin: 10px;
+    justify-content: space-between;
 
+    .search{
+      display:flex;
+      align-items: center;
+
+    }
+    .items{
+      display: flex;
+      //margin: 5px;
     }
   }
 
