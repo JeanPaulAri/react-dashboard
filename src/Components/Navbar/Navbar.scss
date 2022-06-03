@@ -8,6 +8,7 @@ $smoke: whitesmoke;
 $darkgrey: #262525;
 $grey: #999999;
 $lightgrey: #cccccc;
+$black: #000000;
 
 .Navbar{
   height: 50px;
@@ -24,14 +25,61 @@ $lightgrey: #cccccc;
     margin: 10px;
     justify-content: space-between;
 
-    .search{
+    .Search{
       display:flex;
-      align-items: center;
 
+      align-items: center;
+      border: .5px solid $grey;
+      padding: 3px;
+      border-radius: 4px;
+      //background-color: $black;
+      input{
+        border:none;
+        outline:none;
+        // background: transparent;
+        &::placeholder{
+          font-size: 12px;
+        }
+      }
     }
     .items{
       display: flex;
+      align-items:center;
       //margin: 5px;
+      .item{
+        display: flex;
+        align-items:center;
+        margin-right: 20px;
+        position: relative;
+
+        .icon{
+          font-size: 20px;
+        }
+        .avatar{
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        .counter{
+          display: flex;
+          width: 15px;
+          height: 15px;
+          background-color: red;
+          box-shadow: 0 0 2px $black;
+          border-radius: 50%;
+          color: $white;
+          justify-content: center;
+          align-items: center;
+          font-size: 11px;
+          font-weight: bold;
+
+          position:absolute;
+          top:-5px;
+          right:-5px;
+
+        }
+      }
+
     }
   }
 

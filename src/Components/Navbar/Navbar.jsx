@@ -3,8 +3,7 @@ import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import LanguageIcon from '@mui/icons-material/Language';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBulletedOutlined';
 
 
@@ -13,34 +12,37 @@ const Navbar = () => {
     return(
         <div className="Navbar">
             <div className="wrapper">
-                <div className="search">
+                <div className="Search">
                     <input type="text" placeholder="Search..."/>
                     <ManageSearchIcon/>
                 </div>
                 <div className="items">
                     <div className="item">
-                        <LanguageIcon/>
+                        <LanguageIcon className="icon"/>
                         English
                     </div>
                     <div className="item">
-                        <Brightness4Icon/>
+                        <Brightness4Icon className="icon"/>
 
                     </div>
                     <div className="item">
-                        <FullscreenIcon/>
+                        <FullscreenIcon className="icon"/>
 
                     </div>
                     <div className="item">
-                        <NotificationsIcon/>
+                        <NotificationsNoneOutlinedIcon className="icon"/>
+                        <div className="counter">1</div>
+                    </div>
+                    <div className="item">
+                        <ChatBubbleOutlineIcon className="icon"/>
+                        <div className="counter">2</div>
+                    </div>
+                    <div className="item">
+                        <FormatListBulletedOutlinedIcon className="icon"/>
 
                     </div>
                     <div className="item">
-                        <ChatBubbleOutlineIcon/>
-
-                    </div>
-                    <div className="item">
-                        <FormatListBulletedOutlinedIcon/>
-
+                        <img src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt className="avatar"/>
                     </div>
 
                 </div>
