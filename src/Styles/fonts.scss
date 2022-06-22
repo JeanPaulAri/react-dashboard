@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;1,200;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&display=swap');
 @mixin main-font{
 
   font-family: 'Nunito Sans', sans-serif;
@@ -10,5 +10,6 @@
 
 @mixin logo-font{
   //font-family: 'Montserrat', sans-serif;
-  font-family: 'Grape Nuts', cursive;
+  //font-family: 'Grape Nuts', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }

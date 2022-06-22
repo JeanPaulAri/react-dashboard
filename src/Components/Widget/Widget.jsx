@@ -5,8 +5,8 @@ const Widget = () => {
     return(
 
         <div className="Widget">
-            <div className="left"></div>
-            <div className="right"></div>
+            <div className="left">left</div>
+            <div className="right">right</div>
         </div>
     );
 
