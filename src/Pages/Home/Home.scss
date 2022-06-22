@@ -2,16 +2,27 @@
 $bg1: #179b69;
 $white: #ffffff;
 $bg2: #21efa9;
+$border1: #eeeeee;
 //classes
 .homePage{
   //background-color: $bg1;
-
+  display: flex;
   .homeContainer{
-    border: solid 2px $bg2;
+    border: solid 2px $border1;
     border-radius: 10px;
     flex: 6;
+
+    .widgets{
+      display: flex;
+      padding: 20px;
+      gap:  20px;
+
+    }
+
+
   }
-  display: flex;
+
+  //display: flex;
   .tittle{
     color: $white;
     font-weight: normal;

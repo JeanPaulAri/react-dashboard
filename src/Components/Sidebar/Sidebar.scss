@@ -7,22 +7,23 @@ $colorIcons: #e76f25;
 
 $white: #ffffff;
 $smoke: whitesmoke;
-$darkgrey: #262525;
+$darkgrey: #6b6767;
 $grey: #999999;
-$lightgrey: #cccccc;
+$lightgrey: #ded9d9;
+$border1: #eeeeee;
 
 //classes
 .Sidebar{
   flex: 1;
-  border-right: 2px solid $bgSideBar1;
+  border-right: 2px solid $border1;
   border-radius: 10px;
   min-height: 100vh;
   background-color: $white;
 
   .top{
       //background-color: $bgLogo;
-      border-bottom: 2px solid $bgSideBar1;
-      height: 50px;
+      border-bottom: 2px solid $border1;
+      height: 52px;
       display:flex;
       align-items: center;
       justify-content: center;
