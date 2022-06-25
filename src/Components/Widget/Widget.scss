@@ -3,6 +3,7 @@ $darkgrey: #6b6767;
 
 $lightgreen: #61a44c;
 $suavered: #c54343;
+$crimson: #e82e35;
 
 .Widget{
   //margin-right: 20px;
@@ -19,7 +20,7 @@ $suavered: #c54343;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .tittle{
+    .title{
       font-weight: bold;
       font-size: 14px;
       color: $darkgrey;
